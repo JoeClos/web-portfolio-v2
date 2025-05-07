@@ -1,15 +1,19 @@
-# 🌸 Josephine Closan – Portfolio
+# 🌸 Josephine C – Portfolio
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Deployed](https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" />
+</p>
 
 ---
 
-Welcome to my personal portfolio!  
+Welcome to my personal portfolio – version 2!  
 This space showcases a selection of my most meaningful and creative development projects — built with passion, empathy, and a strong eye for detail.
+
+---
 
 ## 🧠 About Me
 
@@ -27,7 +31,7 @@ When I’m not coding, I’m exploring nature, experimenting with new ideas, or 
 | **Photography Portfolio** | A visually expressive site to showcase photography work. | [Live](https://photography-portfolio-five-gamma.vercel.app) | [Code](https://github.com/JoeClos/photography-portfolio) |
 | _...and more inside the site!_ |
 
-👉 See all projects: To be continued!!!
+👉 Full project list coming soon on my redesigned portfolio site!
 
 ---
 
@@ -42,7 +46,7 @@ When I’m not coding, I’m exploring nature, experimenting with new ideas, or 
 
 ## 🌐 Live Site
 
-🔗 Next...WIP
+🛠 The redesigned portfolio is coming soon — stay tuned!
 
 ---
 
@@ -53,10 +57,10 @@ Feel free to reach out or connect on:
 - [LinkedIn](https://www.linkedin.com/in/josephine-closan/)
 - [GitHub](https://github.com/JoeClos)
 
-
 ---
 
 ## 💖 Credits
 
 Crafted with care, curiosity, and a touch of fuchsia 💜  
 _“Problem solver by nature. Designer by heart.”_
+
