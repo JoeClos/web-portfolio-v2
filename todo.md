@@ -4,5 +4,5 @@
 - Create a Logo for page and add the link to Home page.
 - Add an animation for Josephine. Create an animation that adds a dot uppon I from Josephine.
 - Refactor to simplify the architecture.
-- Create Readme file.
+- Create Readme file. - :white_check_mark:
 - Mobile nav close when click outside.
