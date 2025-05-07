@@ -1,15 +1,20 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import Loader from "./components/Loader";
+
+// Lazy-loaded pages
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const Projects = lazy(() => import("./pages/Projects"));
+const Contact = lazy(() => import("./pages/Contact"));
+
 
 function App() {
   const location = useLocation();
@@ -26,25 +31,28 @@ function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors">
       <Navbar />
-      {isHome ? (
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      ) : (
-        <Main>
-          <Routes>
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
 
-        </Main>
-      )}
+      <Suspense fallback={<Loader />}>
+        {isHome ? (
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        ) : (
+          <Main>
+            <Routes>
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </Main>
+        )}
+      </Suspense>
 
       <Footer />
       <ScrollToTopButton />
     </div>
   );
+
 }
 
 export default App;
