@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaEnvelope, FaHeart } from "react-icons/fa";
 
 const name = import.meta.env.VITE_NAME;
@@ -6,6 +6,13 @@ const surname = import.meta.env.VITE_SURNAME;
 const github = import.meta.env.VITE_GITHUB_URL;
 const linkedin = import.meta.env.VITE_LINKEDIN_URL;
 const email = import.meta.env.VITE_EMAIL_URL;
+
+const routes = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Projects", path: "/projects" },
+    { name: "Contact", path: "/contact" },
+];
 
 const Footer = () => {
     return (
@@ -28,15 +35,20 @@ const Footer = () => {
                         Explore
                     </h3>
                     <div className="flex flex-col space-y-2">
-                        <Link to="/about" className="hover:text-fuchsia-600">
-                            About
-                        </Link>
-                        <Link to="/projects" className="hover:text-fuchsia-600">
-                            Projects
-                        </Link>
-                        <Link to="/contact" className="hover:text-fuchsia-600">
-                            Contact
-                        </Link>
+                        <ul>
+                            {routes.map((route) => (
+                                <li key={route.name}>
+                                    <NavLink
+                                        to={route.path}
+                                        className={({ isActive }) =>
+                                            `hover:text-fuchsia-600 transition ${isActive ? "text-fuchsia-600 font-semibold" : ""}`
+                                        }
+                                    >
+                                        {route.name}
+                                    </NavLink>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </div>
 

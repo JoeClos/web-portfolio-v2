@@ -1,5 +1,5 @@
-- Add Home navigation link to Footer.
-- Show active nav links in Footer.
+- Add Home navigation link to Footer. - :white_check_mark:
+- Show active nav links in Footer. - :white_check_mark:
 - Automatically scroll to top when navigating through pages. - :white_check_mark:
 - Create a Logo for page and add the link to Home page.
 - Add an animation for Josephine. Create an animation that adds a dot uppon I from Josephine.
