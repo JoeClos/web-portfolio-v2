@@ -1,54 +1,62 @@
-# React + TypeScript + Vite
+# 🌸 Josephine Closan – Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Deployed](https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to my personal portfolio!  
+This space showcases a selection of my most meaningful and creative development projects — built with passion, empathy, and a strong eye for detail.
 
-## Expanding the ESLint configuration
+## 🧠 About Me
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+I’m Josephine, a frontend developer who bridges technology and design to craft thoughtful digital experiences.  
+When I’m not coding, I’m exploring nature, experimenting with new ideas, or helping others grow.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Projects
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+| Project | Description | Live | Code |
+|--------|-------------|------|------|
+| **Course Hub** | A course subscription platform to explore and manage learning paths. | [Live](https://coursehubui.netlify.app) | [Code](https://github.com/JoeClos/coursehub) |
+| **TriviaQuest** | A trivia app using Open Trivia DB API with animated UI and category filters. | [Live](https://triviaquest.netlify.app) | [Code](https://github.com/JoeClos/TriviaQuest) |
+| **Photography Portfolio** | A visually expressive site to showcase photography work. | [Live](https://photography-portfolio-five-gamma.vercel.app) | [Code](https://github.com/JoeClos/photography-portfolio) |
+| _...and more inside the site!_ |
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+👉 See all projects: To be continued!!!
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: React, TypeScript, Vite, Tailwind CSS
+- **Backend**: Node.js, Express, MongoDB (for full-stack projects)
+- **Styling**: Sass, MUI, Bootstrap, AOS
+- **Other Tools**: GitHub, Postman, Netlify, Vercel, EmailJS
+
+---
+
+## 🌐 Live Site
+
+🔗 Next...WIP
+
+---
+
+## 📫 Contact
+
+Feel free to reach out or connect on:
+
+- [LinkedIn](https://www.linkedin.com/in/josephine-closan/)
+- [GitHub](https://github.com/JoeClos)
+
+
+---
+
+## 💖 Credits
+
+Crafted with care, curiosity, and a touch of fuchsia 💜  
+_“Problem solver by nature. Designer by heart.”_
