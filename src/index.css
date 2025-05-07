@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+:root {
+  font-family: "InterVariable", sans-serif;
+}
+
+.typing-effect {
+  font-family: 'Pacifico', cursive;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #D946EF; /* fuchsia-600 */
+  width: fit-content;
+
+  animation: typing 2s steps(22, end) forwards,
+             blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+  100% { border-color: currentColor }
+}
+
+
