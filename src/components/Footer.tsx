@@ -82,7 +82,7 @@ const Footer = () => {
             </div>
 
             {/* Bottom */}
-            <div className="mt-10 border-t pt-6 text-center text-sm text-gray-500 dark:text-gray-400">
+            <div className="mt-10 border-t pt-6  sm:text-center text-sm text-gray-500 dark:text-gray-400">
                 &copy; {new Date().getFullYear()} {" "}
                 <span className="text-fuchsia-600 font-semibold">{name}</span> C. Made
                 with <FaHeart className="inline text-fuchsia-600" /> and creativity.
