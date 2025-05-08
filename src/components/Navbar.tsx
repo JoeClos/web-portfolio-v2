@@ -15,27 +15,27 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-            const savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "dark") {
-                setDarkMode(true);
-                document.documentElement.classList.add("dark");
-            } else {
-                setDarkMode(false);
-                document.documentElement.classList.remove("dark");
-            }
-        }, []);
-    
-    
-        useEffect(() => {
-            const root = document.documentElement;
-            if (darkMode) {
-                root.classList.add("dark");
-                localStorage.setItem("theme", "dark");
-            } else {
-                root.classList.remove("dark");
-                localStorage.setItem("theme", "light");
-            }
-        }, [darkMode]);
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      setDarkMode(true);
+      document.documentElement.classList.add("dark");
+    } else {
+      setDarkMode(false);
+      document.documentElement.classList.remove("dark");
+    }
+  }, []);
+
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (darkMode) {
+      root.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      root.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
 
   return (
     <nav className="w-full fixed top-0 left-0 z-50 bg-white dark:bg-gray-900 text-gray-900 dark:text-white shadow-md transition">
@@ -59,7 +59,7 @@ const Navbar = () => {
               </NavLink>
             </li>
           ))}
-          <li>
+          {/* <li>
             <a
               href="/resume.pdf"
               download
@@ -67,7 +67,7 @@ const Navbar = () => {
             >
               Resume
             </a>
-          </li>
+          </li> */}
           <li>
             <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
           </li>
@@ -83,29 +83,21 @@ const Navbar = () => {
       <div
         className={`md:hidden bg-white dark:bg-gray-900 transition-all duration-300 overflow-hidden ${menuOpen ? "max-h-96 opacity-100 py-4" : "max-h-0 opacity-0"}`}
       >
-        <ul className="flex flex-col items-center space-y-4 transition-opacity duration-300">
+        <ul className="flex flex-col items-start mx-auto space-y-4 transition-opacity duration-300 text-base sm:text-lg text-left w-fit">
           {routes.map((route) => (
             <li key={route.name}>
               <NavLink
                 to={route.path}
                 onClick={() => setMenuOpen(false)}
                 className={({ isActive }) =>
-                  `text-lg hover:text-fuchsia-600 ${isActive ? "text-fuchsia-600 font-semibold" : ""}`
+                  `block px-4 py-1 transition hover:text-fuchsia-600 ${isActive ? "text-fuchsia-600 font-semibold" : ""
+                  }`
                 }
               >
                 {route.name}
               </NavLink>
             </li>
           ))}
-          <li>
-            <a
-              href="/resume.pdf"
-              download
-              className="px-4 py-1 rounded border border-fuchsia-600 text-fuchsia-600 hover:bg-fuchsia-600 hover:text-white transition"
-            >
-              Resume
-            </a>
-          </li>
           <li>
             <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
           </li>
