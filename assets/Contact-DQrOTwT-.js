@@ -1,0 +1,1 @@
+import{j as e}from"./index-C4gveQh9.js";import{S as t}from"./SectionLayout-jZFfx9TR.js";const s=()=>e.jsx(t,{title:"Get In Touch",children:e.jsxs("p",{className:"leading-relaxed text-lg",children:["You can reach me at: ",e.jsx("a",{href:"mailto:josephine@example.com",className:"text-fuchsia-600",children:"josephine@example.com"})]})});export{s as default};
