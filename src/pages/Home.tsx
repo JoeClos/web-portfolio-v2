@@ -8,7 +8,7 @@ const name = import.meta.env.VITE_NAME;
 const Home = () => {
   return (
     <>
-      <section className="relative w-full overflow-x-hidden min-h-screen pt-14 flex items-center justify-center bg-gradient-to-b from-white via-fuchsia-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors">
+      <section className="relative w-full overflow-x-hidden min-h-screen pt-14 flex items-center justify-center pb-32 sm:pb-15 bg-gradient-to-b from-white via-fuchsia-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors">
         <div className="flex flex-col-reverse md:flex-row items-center gap-12 px-6 max-w-7xl w-full ">
           {/* Text Content */}
           <div className="flex-1 text-center md:text-left" data-aos="fade-right">
@@ -17,7 +17,8 @@ const Home = () => {
               <br />A developer who blends art, empathy & innovation.
             </h1>
 
-            <p className="text-lg text-gray-700 dark:text-gray-300 max-w-xl mb-8 leading-relaxed">
+            <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-xl mb-8 leading-relaxed font-medium font-['DM_Sans']">
+
               I'm here to build web experiences that feel human, intuitive,
               accessible, and crafted with care — each line of code is a little
               piece of my story.

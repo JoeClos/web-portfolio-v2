@@ -8,7 +8,7 @@ const name = import.meta.env.VITE_NAME;
 const About = () => {
   return (
     <SectionLayout title={`About ${name}`}>
-      <div className="flex flex-col md:flex-row gap-8 items-center"  data-aos="fade-up">
+      <div className="flex flex-col md:flex-row gap-8 items-center" data-aos="fade-up">
         {/* Profile image */}
         <img
           src={profileImg}
@@ -23,16 +23,16 @@ const About = () => {
             <span className="uppercase tracking-wide font-semibold">Creative & Empathetic</span>
           </div>
 
-          <p>
+          <p className="font-['DM_Sans']">
             I'm a frontend developer with a heart for design, detail, and human connection.
             I love crafting intuitive, visually engaging web experiences that feel as good as they look.
           </p>
-          <p>
+          <p className="font-['DM_Sans']">
             My journey has brought me through a mix of technologies, tools, and real-world collaboration —
             and I thrive in environments where learning never stops. I'm always curious, always adapting, and
             always pushing for clarity and creativity.
           </p>
-          <p>
+          <p className="font-['DM_Sans']">
             Beyond the screen, you'll find me exploring nature trails, experimenting in the kitchen, or diving
             into the latest tech and design trends. My artistic and empathetic spirit keeps me grounded,
             inspired, and committed to helping others grow too — whether through code, creativity, or simply being a thoughtful teammate.

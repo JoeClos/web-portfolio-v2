@@ -30,7 +30,7 @@ const Projects = () => {
         <h2 className="text-3xl font-extrabold mb-4">
           Problem solver by nature. <span className="text-fuchsia-600">Designer by heart.</span>
         </h2>
-        <p className="text-lg text-gray-700 dark:text-gray-300">
+        <p className="text-lg text-gray-700 dark:text-gray-300 font-['DM_Sans']">
           Dive into my work and see what I've been up to!
         </p>
       </div>
