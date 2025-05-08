@@ -6,8 +6,8 @@ const name = import.meta.env.VITE_NAME;
 
 const Home = () => {
   return (
-    
-    <section className="relative w-full min-h-screen flex items-center justify-center bg-gradient-to-b from-white via-fuchsia-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors">
+
+    <section className="relative w-full overflow-x-hidden min-h-screen pt-24 flex items-center justify-center bg-gradient-to-b from-white via-fuchsia-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors">
       <div className="flex flex-col-reverse md:flex-row items-center gap-12 px-6 max-w-7xl w-full py-24">
         {/* Text Content */}
         <div className="flex-1 text-center md:text-left" data-aos="fade-right">
