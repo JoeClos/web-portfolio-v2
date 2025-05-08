@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import DarkModeToggle from "./DarkModeToggle";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -11,8 +11,30 @@ const routes = [
 ];
 
 const Navbar = () => {
+  const menuRef = useRef<HTMLDivElement>(null);
   const [darkMode, setDarkMode] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node)
+      ) {
+        setMenuOpen(false);
+      }
+    };
+
+    if (menuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuOpen]);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -80,7 +102,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div
+      <div ref={menuRef}
         className={`md:hidden bg-white dark:bg-gray-900 transition-all duration-300 overflow-hidden ${menuOpen ? "max-h-96 opacity-100 py-4" : "max-h-0 opacity-0"}`}
       >
         <ul className="flex flex-col items-start mx-auto space-y-4 transition-opacity duration-300 text-base sm:text-lg text-left w-fit">
