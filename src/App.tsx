@@ -9,38 +9,33 @@ import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import Loader from "./components/Loader";
 
-// Lazy-loaded pages
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Projects = lazy(() => import("./pages/Projects"));
 const Contact = lazy(() => import("./pages/Contact"));
 
-
 function App() {
   const location = useLocation();
 
   useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-    });
+    AOS.init({ duration: 800, once: true });
   }, []);
 
-  const isHome = location.pathname === "/";
+  const isStandalone = location.pathname === "/" || location.pathname === "/about";
 
   return (
     <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors">
       <Navbar />
 
       <Suspense fallback={<Loader />}>
-        {isHome ? (
+        {isStandalone ? (
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         ) : (
           <Main>
             <Routes>
-              <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
@@ -52,7 +47,6 @@ function App() {
       <ScrollToTopButton />
     </div>
   );
-
 }
 
 export default App;

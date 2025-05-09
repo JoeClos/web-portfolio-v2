@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import DarkModeToggle from "../DarkModeToggle";
-import { useRef, } from "react";
+import { useRef } from "react";
 
 const routes = [
   { name: "Home", path: "/" },
