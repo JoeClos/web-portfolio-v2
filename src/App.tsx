@@ -10,9 +10,7 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 import Loader from "./components/Loader";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-
-
+import ChatBubbleCTA from "./components/ChatBubbleCTA";
 
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
@@ -31,6 +29,7 @@ function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors">
       <Navbar />
+      <ChatBubbleCTA />
 
       <ToastContainer position="top-center" autoClose={3000} />
       <Suspense fallback={<Loader />}>

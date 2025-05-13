@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import DarkModeToggle from "../DarkModeToggle";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 
 const routes = [
   { name: "Home", path: "/" },
@@ -18,6 +18,29 @@ type Props = {
 
 const MobileMenu = ({ menuOpen, setMenuOpen, darkMode, setDarkMode }: Props) => {
   const menuRef = useRef<HTMLDivElement>(null);
+
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      // Close the menu if clicking outside the menu and the button
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node)
+      ) {
+        setMenuOpen(false);
+      }
+    };
+
+    if (menuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuOpen]);
 
   return (
     <div
