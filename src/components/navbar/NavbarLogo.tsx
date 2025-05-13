@@ -1,25 +1,29 @@
+import { Link } from "react-router-dom";
 import logoImg from "../../assets/logo.png";
+
+const name = import.meta.env.VITE_NAME;
 
 const NavbarLogo = () => {
   return (
-    <div>
-      {/* Logo Icon */}
-      <img
-        src={logoImg}
-        alt="Josephine logo"
-        className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto"
-      />
+  
+      <Link to="/" className="flex items-center gap-3">
+        {/* Logo Icon */}
+        <img
+          src={logoImg}
+          alt={`${name} Logo`}
+          className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto"
+        />
+        {/* Text Content */}
+        <div className="text-center">
+          <h1 className="text-base sm:text-lg md:text-xl font-bold text-fuchsia-600 border-b-1 border-fuchsia-600">
+            {name}
+          </h1>
+          <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 uppercase tracking-widest">
+            Creative Circle
+          </p>
+        </div>
+      </Link>
 
-      {/* Brand Text */}
-      {/* <div className="leading-tight">
-        <p className="text-sm sm:text-base uppercase text-gray-900 dark:text-white border-b-2 border-fuchsia-600 inline-block pb-1 tracking-normal sm:tracking-wide">
-          Josephine
-        </p>
-        <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 tracking-wide uppercase mt-1">
-          Dev
-        </p>
-      </div> */}
-    </div>
   );
 };
 

@@ -13,7 +13,7 @@ const DarkModeToggle = ({ darkMode, setDarkMode }: DarkModeToggleProps) => {
         aria-label="Toggle dark mode"
       />
       <div
-        className="w-14 h-7 sm:w-12 sm:h-6 rounded-full flex items-center justify-between px-2 relative peer-focus:ring-2 peer-focus:ring-fuchsia-500 transition duration-300"
+        className="w-14 h-7 sm:w-12 sm:h-6 rounded-full flex items-center justify-between px-2 relative peer-focus:ring-2 peer-focus:ring-fuchsia-600 transition duration-300"
         style={{
           backgroundColor: COLORS.background.light,
         }}

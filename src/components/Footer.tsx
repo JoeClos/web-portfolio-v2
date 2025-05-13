@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaEnvelope, FaHeart } from "react-icons/fa";
 
 const name = import.meta.env.VITE_NAME;
-const surname = import.meta.env.VITE_SURNAME;
 const github = import.meta.env.VITE_GITHUB_URL;
 const linkedin = import.meta.env.VITE_LINKEDIN_URL;
 const email = import.meta.env.VITE_EMAIL_URL;
@@ -21,7 +20,7 @@ const Footer = () => {
                 {/* Branding */}
                 <div>
                     <h2 className="text-xl font-bold text-fuchsia-600">
-                        {name} {surname}
+                        {name}
                     </h2>
                     <p className="mt-2 text-sm leading-relaxed">
                         Bridging design, empathy, and technology to build meaningful digital
