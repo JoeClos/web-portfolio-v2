@@ -73,7 +73,7 @@ const ProjectCard = ({ project, index, isExpanded, toggleExpand }: Props) => {
                             href={project.codeLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full border border-gray-400 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
+                            className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full border border-gray-400 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
                         >
                             <FaGithub /> Code
                         </a>

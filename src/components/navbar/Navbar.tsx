@@ -7,8 +7,9 @@ import { Turn as Hamburger } from 'hamburger-react'
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [navbarShadow, setNavbarShadow] = useState(false);
 
-   useEffect(() => {
+  useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     setDarkMode(savedTheme === "dark");
   }, []);
@@ -24,8 +25,27 @@ const Navbar = () => {
     }
   }, [darkMode]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setNavbarShadow(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
   return (
-    <nav className="w-full fixed top-0 left-0 z-50 bg-white dark:bg-gray-900 text-gray-900 dark:text-white shadow-md transition">
+<nav
+  className={`w-full fixed top-0 left-0 z-50 transition-all duration-300
+    ${
+      navbarShadow
+        ? "bg-white/90 dark:bg-gray-900/80 shadow-md dark:shadow-[0_0_25px_#d946ef44] backdrop-blur-sm"
+        : "bg-white dark:bg-gray-900 shadow-none"
+    }
+    text-gray-900 dark:text-white py-1 sm:py-2 md:py-3`}
+>
+
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
         <NavbarLogo />
         <NavbarLinks darkMode={darkMode} setDarkMode={setDarkMode} />

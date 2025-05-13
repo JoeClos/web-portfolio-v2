@@ -21,7 +21,7 @@ const CoreValuesSection = () => {
                   {title}
                 </h3>
               </div>
-              <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+              <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed font-['DM_Sans']">
                 {description}
               </p>
             </div>
