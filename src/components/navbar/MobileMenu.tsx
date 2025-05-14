@@ -40,7 +40,7 @@ useEffect(() => {
   return () => {
     document.removeEventListener('mousedown', handleClickOutside);
   };
-}, [menuOpen]);
+}, [menuOpen, setMenuOpen]);
 
   return (
     <div

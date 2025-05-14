@@ -30,22 +30,17 @@ const SkillGroup = ({ title, items }: { title: string; items: SkillItem[] }) => 
 
 const SkillsSection = () => {
   return (
-    <section
-      id="stack"
-      className="w-full py-20 px-6 sm:px-10 lg:px-24 bg-white dark:bg-gray-900"
-    >
-      <div className="max-w-6xl mx-auto" data-aos="fade-up">
-        <h2 className="text-3xl font-extrabold text-center text-gray-900 dark:text-white mb-14">
-          Technologies I Use
-        </h2>
+    <div className="max-w-6xl mx-auto" data-aos="fade-up">
+      <h2 className="text-3xl font-extrabold text-center text-gray-900 dark:text-white mb-14">
+        Technologies I Use
+      </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          <SkillGroup title="Languages" items={skills.languages} />
-          <SkillGroup title="Frameworks & Libraries" items={skills.frameworks} />
-          <SkillGroup title="Tools" items={skills.tools} />
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <SkillGroup title="Languages" items={skills.languages} />
+        <SkillGroup title="Frameworks & Libraries" items={skills.frameworks} />
+        <SkillGroup title="Tools" items={skills.tools} />
       </div>
-    </section>
+    </div>
   );
 };
 
