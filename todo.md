@@ -1,8 +1,7 @@
 - Add Home navigation link to Footer. - :white_check_mark:
 - Show active nav links in Footer. - :white_check_mark:
 - Automatically scroll to top when navigating through pages. - :white_check_mark:
-- Create a Logo for page and add the link to Home page.
-- Add an animation for Josephine. Create an animation that adds a dot uppon I from Josephine.
+- Create a Logo for page and add the link to Home page. :white_check_mark:
 - Refactor to simplify the architecture.
 - Create Readme file. - :white_check_mark:
-- Mobile nav close when click outside.
+- Mobile nav close when click outside. :white_check_mark:

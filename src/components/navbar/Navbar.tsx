@@ -50,7 +50,7 @@ const Navbar = () => {
         <NavbarLogo />
         <NavbarLinks darkMode={darkMode} setDarkMode={setDarkMode} />
         <div className="md:hidden relative w-10 h-10 flex items-center justify-center z-50">
-          <Hamburger toggled={menuOpen} toggle={setMenuOpen} size={20} />
+          <Hamburger toggled={menuOpen} toggle={() => setMenuOpen(!menuOpen)} size={20} />
         </div>
 
       </div>

@@ -20,27 +20,27 @@ const MobileMenu = ({ menuOpen, setMenuOpen, darkMode, setDarkMode }: Props) => 
   const menuRef = useRef<HTMLDivElement>(null);
 
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      // Close the menu if clicking outside the menu and the button
-      if (
-        menuRef.current &&
-        !menuRef.current.contains(event.target as Node)
-      ) {
-        setMenuOpen(false);
-      }
-    };
+useEffect(() => {
+  const handleClickOutside = (event: MouseEvent) => {
+    const target = event.target as HTMLElement;
 
-    if (menuOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
-    } else {
-      document.removeEventListener('mousedown', handleClickOutside);
+    // If the click was inside the menu OR on the hamburger toggle, do nothing
+    const isInsideMenu = menuRef.current?.contains(target);
+    const isHamburger = target.closest('.hamburger-react');
+
+    if (!isInsideMenu && !isHamburger) {
+      setMenuOpen(false);
     }
+  };
 
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [menuOpen]);
+  if (menuOpen) {
+    document.addEventListener('mousedown', handleClickOutside);
+  }
+
+  return () => {
+    document.removeEventListener('mousedown', handleClickOutside);
+  };
+}, [menuOpen]);
 
   return (
     <div
