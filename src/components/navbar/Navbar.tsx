@@ -34,6 +34,20 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+  const body = document.body;
+  if (menuOpen) {
+    body.style.overflow = "hidden";
+  } else {
+    body.style.overflow = "";
+  }
+
+  // Cleanup on unmount
+  return () => {
+    body.style.overflow = "";
+  };
+}, [menuOpen]);
+
 
   return (
 <nav
