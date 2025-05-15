@@ -9,8 +9,8 @@ type SkillItem = {
 
 const SkillGroup = ({ title, items }: { title: string; items: SkillItem[] }) => (
   <div className="space-y-4">
-    <h3 className="text-xl font-semibold">{title}</h3>
-    <ul className="grid grid-cols-2 sm:grid-cols-2 gap-4">
+    <h3 className="text-xl sm:text-2xl font-semibold px-2 sm:px-4">{title}</h3>
+    <ul className="grid grid-cols-2 sm:grid-cols-2 gap-4 px-2 sm:px-4">
       {items.map(({ name, icon: Icon, color }) => (
         <li
           key={name}
@@ -18,10 +18,12 @@ const SkillGroup = ({ title, items }: { title: string; items: SkillItem[] }) => 
           data-aos="zoom-in"
         >
           <Icon
-            className="text-xl md:text-2xl transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-6"
+            className="text-lg sm:text-xl md:text-2xl transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-6"
             style={{ color }}
           />
-          <span className="font-medium">{name}</span>
+          <span className="text-sm sm:text-base font-medium">
+            {name}
+          </span>
         </li>
       ))}
     </ul>
@@ -30,8 +32,8 @@ const SkillGroup = ({ title, items }: { title: string; items: SkillItem[] }) => 
 
 const SkillsSection = () => {
   return (
-    <div className="max-w-6xl mx-auto" data-aos="fade-up">
-      <h2 className="text-3xl font-extrabold text-center text-gray-900 dark:text-white mb-14">
+    <div className="max-w-7xl mx-auto" data-aos="fade-up">
+      <h2 className="text-3xl sm:text-4xl font-extrabold text-center text-gray-900 dark:text-white mb-14">
         Technologies I Use
       </h2>
 

@@ -22,15 +22,15 @@ const keywords = [
 
 const KeywordsSection = () => {
   return (
-    <div className="max-w-7xl mx-auto text-center">
-      <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white mb-6">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white mb-6">
         What I Offer
       </h2>
       <p className="text-lg text-gray-700 dark:text-gray-200 mb-16 max-w-3xl mx-auto font-['DM_Sans']">
         Thoughtful design. Collaborative spirit. Human-first development.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-14 gap-x-8">
         {keywords.map((item, i) => (
           <div
             key={i}
@@ -38,7 +38,7 @@ const KeywordsSection = () => {
             data-aos="fade-up"
             data-aos-delay={i * 150}
           >
-            <div className="w-28 h-28 sm:w-32 sm:h-32 flex items-center justify-center rounded-full bg-white/60 dark:bg-[#ffffff12] shadow-[0_0_18px_#f0abfc] dark:shadow-[0_0_25px_#d946ef] transition-transform duration-300 group-hover:scale-105">
+            <div className="w-28 h-28 xs:w-32 xs:h-32 sm:w-36 sm:h-36  flex items-center justify-center rounded-full bg-white/60 dark:bg-[#ffffff12] shadow-[0_0_18px_#f0abfc] dark:shadow-[0_0_25px_#d946ef] transition-transform duration-300 group-hover:scale-105">
               <img
                 src={item.icon}
                 alt={item.label}
@@ -49,7 +49,7 @@ const KeywordsSection = () => {
             <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white tracking-wide">
               {item.label}
             </h3>
-            <p className="text-base text-gray-700 dark:text-gray-300 max-w-xs leading-relaxed font-['DM_Sans']">
+            <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 max-w-xs leading-relaxed font-['DM_Sans']">
               {item.caption}
             </p>
           </div>

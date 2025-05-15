@@ -3,7 +3,7 @@ import { values } from "../data/values";
 const CoreValuesSection = () => {
   return (
     <section className="w-full py-20 bg-gradient-to-b from-fuchsia-50 to-white dark:from-gray-800 dark:to-gray-900">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl font-extrabold mb-12 text-center text-gray-900 dark:text-white">
           <span>What Drives Me</span>
         </h2>
@@ -17,11 +17,11 @@ const CoreValuesSection = () => {
             >
               <div className="flex items-center gap-3 mb-3">
                 <Icon className={`text-3xl ${iconColor}`} />
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
                   {title}
                 </h3>
               </div>
-              <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed font-['DM_Sans']">
+              <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                 {description}
               </p>
             </div>

@@ -1,4 +1,4 @@
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+    import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import type { Project } from "../../types/Project";
 import ProjectDescription from "./ProjectDescription";
 
@@ -17,7 +17,7 @@ const ProjectCard = ({ project, index, isExpanded, toggleExpand }: Props) => {
         >
             {/* Header */}
             <div className="px-5 pt-5">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white group-hover:text-fuchsia-600 transition">
+                <h3 className="text-lg font-semibold text-gray-800 dark:text-white group-hover:text-fuchsia-600 transition">
                     {project.title}
                 </h3>
             </div>

@@ -13,7 +13,7 @@ type Props = {
           <>
             {isExpanded ? (
               <>
-                <p className="font-['DM_Sans']">{text}</p>
+                <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed font-['DM_Sans']">{text}</p>
                 <button
                   onClick={onToggle}
                   className="mt-1 text-xs text-fuchsia-600 hover:underline focus:outline-none"
@@ -22,7 +22,7 @@ type Props = {
                 </button>
               </>
             ) : (
-              <p className="font-['DM_Sans']">
+              <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed font-['DM_Sans']">
                 {text.slice(0, 100)}...
                 <button
                   onClick={onToggle}

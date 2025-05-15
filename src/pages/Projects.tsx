@@ -25,11 +25,11 @@ const Projects = () => {
     : projects.filter(p => p.category === activeCategory);
 
   return (
-    <div className="pt-24 sm:pt-28">
-      <div className="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
-        <h2 className="text-3xl font-extrabold mb-4">
+    <div className="pt-24 sm:pt-28 px-4 sm:px-6 lg:px-12 xl:px-20">
+      <div className="text-center max-w-4xl mx-auto mb-12" data-aos="fade-up">
+        <h1 className="text-3xl sm:text-4xl font-extrabold leading-snug mb-4">
           Problem solver by nature. <span className="text-fuchsia-600">Designer by heart.</span>
-        </h2>
+        </h1>
         <p className="text-lg text-gray-700 dark:text-gray-300 font-['DM_Sans']">
           Dive into my work and see what I've been up to!
         </p>

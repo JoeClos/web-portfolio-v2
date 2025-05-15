@@ -5,7 +5,7 @@ import profileImg from "../../assets/cover.png";
 
 const HeroAboutSection = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center md:items-start justify-center  gap-10 relative max-w-7xl mx-auto">
+    <div className="flex flex-col lg:flex-row items-center md:items-start justify-center gap-10 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Left: Image */}
       <div className="relative z-10 w-[280px] h-[360px] sm:w-[320px] sm:h-[400px] rounded-[2rem] overflow-hidden shadow-lg dark:shadow-[0_0_25px_#d946ef]">
         <img

@@ -22,19 +22,19 @@ const timeline = [
   },
   {
     year: "2025",
-    title: "Present — Constantly Growing",
+    title: "Present - Constantly growing",
     description: "Focused on creative projects, clean code, and meaningful impact.",
   },
 ];
 
 const Timeline = () => {
   return (
-    <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start gap-16">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-start gap-16">
       {/* Left: Timeline Text */}
       <div className="flex-1">
-        <h3 className="text-3xl font-extrabold text-center lg:text-left text-gray-900 dark:text-white mb-14">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-center lg:text-left text-gray-900 dark:text-white mb-14">
           My Developer Journey
-        </h3>
+        </h2>
 
         <div className="relative border-l-2 border-fuchsia-500 dark:border-fuchsia-400 pl-6 sm:pl-12 space-y-16">
           {timeline.map((item, idx) => (
@@ -58,7 +58,7 @@ const Timeline = () => {
                   <h4 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-white mb-1 leading-snug">
                     {item.title}
                   </h4>
-                  <p className="text-sm sm:text-base text-gray-700 dark:text-gray-400 leading-relaxed font-['DM_Sans']">
+                  <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed font-['DM_Sans']">
                     {item.description}
                   </p>
                 </div>
