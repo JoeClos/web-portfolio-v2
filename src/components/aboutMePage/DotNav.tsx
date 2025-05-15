@@ -29,7 +29,8 @@ const DotNav = () => {
   }, []);
 
   return (
-    <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-50 hidden md:flex flex-col gap-4">
+    <nav role="navigation"
+      aria-label="Section dot navigation" className="fixed right-6 top-1/2 transform -translate-y-1/2 z-50 hidden md:flex flex-col gap-4">
       {sections.map((section) => (
         <ScrollLink
           key={section.id}
@@ -38,13 +39,13 @@ const DotNav = () => {
           duration={500}
           offset={-80}
           className="group relative cursor-pointer"
+          aria-label={section.label}
         >
           <div
-            className={`w-4 h-4 rounded-full border-2 ${
-              active === section.id
+            className={`w-4 h-4 rounded-full border-2 ${active === section.id
                 ? "bg-fuchsia-600 border-fuchsia-600"
                 : "border-fuchsia-400"
-            } transition-all duration-300`}
+              } transition-all duration-300`}
           />
           {/* Tooltip */}
           <span className="absolute right-6 top-1/2 -translate-y-1/2 text-sm whitespace-nowrap bg-fuchsia-700 text-white px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none">
@@ -52,7 +53,7 @@ const DotNav = () => {
           </span>
         </ScrollLink>
       ))}
-    </div>
+    </nav>
   );
 };
 

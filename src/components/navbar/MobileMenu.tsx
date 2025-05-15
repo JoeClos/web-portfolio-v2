@@ -20,31 +20,33 @@ const MobileMenu = ({ menuOpen, setMenuOpen, darkMode, setDarkMode }: Props) => 
   const menuRef = useRef<HTMLDivElement>(null);
 
 
-useEffect(() => {
-  const handleClickOutside = (event: MouseEvent) => {
-    const target = event.target as HTMLElement;
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
 
-    // If the click was inside the menu OR on the hamburger toggle, do nothing
-    const isInsideMenu = menuRef.current?.contains(target);
-    const isHamburger = target.closest('.hamburger-react');
+      // If the click was inside the menu OR on the hamburger toggle, do nothing
+      const isInsideMenu = menuRef.current?.contains(target);
+      const isHamburger = target.closest('.hamburger-react');
 
-    if (!isInsideMenu && !isHamburger) {
-      setMenuOpen(false);
+      if (!isInsideMenu && !isHamburger) {
+        setMenuOpen(false);
+      }
+    };
+
+    if (menuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
     }
-  };
 
-  if (menuOpen) {
-    document.addEventListener('mousedown', handleClickOutside);
-  }
-
-  return () => {
-    document.removeEventListener('mousedown', handleClickOutside);
-  };
-}, [menuOpen, setMenuOpen]);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuOpen, setMenuOpen]);
 
   return (
     <div
       ref={menuRef}
+      role="menu"
+      aria-label="Mobile navigation menu"
       className={`md:hidden bg-white dark:bg-gray-900 transition-all duration-300 overflow-hidden ${menuOpen ? "max-h-96 opacity-100 py-4" : "max-h-0 opacity-0"
         }`}
     >

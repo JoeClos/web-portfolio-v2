@@ -15,23 +15,28 @@ type Props = {
 
 const NavbarLinks = ({ darkMode, setDarkMode }: Props) => {
   return (
-    <ul className="hidden md:flex space-x-8 items-center">
-      {routes.map((route) => (
-        <li key={route.name}>
-          <NavLink
-            to={route.path}
-            className={({ isActive }) =>
-              `hover:text-fuchsia-600 transition ${isActive ? "text-fuchsia-600 font-semibold" : ""}`
-            }
-          >
-            {route.name}
-          </NavLink>
+    <nav role="navigation" aria-label="Main navigation">
+      <ul className="hidden md:flex space-x-8 items-center">
+        {routes.map((route) => (
+          <li key={route.name} >
+            {/* Use NavLink for active link styling */}
+            <NavLink
+              to={route.path}
+              className={({ isActive }) =>
+                `hover:text-fuchsia-600 transition ${isActive ? "text-fuchsia-600 font-semibold" : ""}`
+              }
+            >
+              {route.name}
+            </NavLink>
+          </li>
+        ))}
+
+        <li>
+          <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
         </li>
-      ))}
-      <li>
-        <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
-      </li>
-    </ul>
+      </ul>
+
+    </nav>
   );
 };
 
