@@ -1,12 +1,15 @@
 # 🌸 Josephine C – Portfolio
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Portfolio-v2-7B1E7A?style=for-the-badge&logo=github&logoColor=white&labelColor=E586F0" />
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/TailwindCSS-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white" />
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
   <img src="https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" />
+  <img src="https://komarev.com/ghpvc/?username=JoeClos&label=Visitors&label_color=7B1E7A&color=E586F0&style=for-the-badge" alt="Visitor counter badge" />
 </p>
+
 
 <p align="center">
   <a href="https://josephine-dev.netlify.app" target="_blank">
@@ -64,8 +67,4 @@ Feel free to reach out or connect on:
 
 Crafted with care, curiosity, and a touch of fuchsia 💜  
 _“Problem solver by nature. Designer by heart.”_
-
-<p>
-  <img src="https://komarev.com/ghpvc/?username=JoeClos&label=Visitors&label_color=7B1E7A&color=E586F0&style=flat-square" alt="Visitor counter badge" />
-</p>
 
