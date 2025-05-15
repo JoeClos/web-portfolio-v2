@@ -8,6 +8,12 @@
   <img src="https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" />
 </p>
 
+<p align="center">
+  <a href="https://josephine-dev.netlify.app" target="_blank">
+    <img src="https://josephine-dev.netlify.app/assets/portfolio-preview.jpg" alt="Portfolio Preview" width="100%" />
+  </a>
+</p>
+
 ---
 
 ## 🌐 Live Portfolio
