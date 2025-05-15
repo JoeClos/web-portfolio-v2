@@ -10,14 +10,17 @@
 
 ---
 
-Welcome to my personal portfolio – version 2!  
-This space showcases a selection of my most meaningful and creative development projects — built with passion, empathy, and a strong eye for detail.
+## 🌐 Live Portfolio
+
+**🔗 [Visit my live site here](https://josephine-dev.netlify.app)**
+
+Crafted to showcase my passion for clean UI, thoughtful UX, and creative development.
 
 ---
 
 ## 🧠 About Me
 
-I’m Josephine, a frontend developer who bridges technology and design to craft thoughtful digital experiences.  
+Hi! I’m **Josephine**, a frontend developer who bridges technology and design to craft thoughtful digital experiences.  
 When I’m not coding, I’m exploring nature, experimenting with new ideas, or helping others grow.
 
 ---
@@ -29,9 +32,7 @@ When I’m not coding, I’m exploring nature, experimenting with new ideas, or 
 | **Course Hub** | A course subscription platform to explore and manage learning paths. | [Live](https://coursehubui.netlify.app) | [Code](https://github.com/JoeClos/coursehub) |
 | **TriviaQuest** | A trivia app using Open Trivia DB API with animated UI and category filters. | [Live](https://triviaquest.netlify.app) | [Code](https://github.com/JoeClos/TriviaQuest) |
 | **Photography Portfolio** | A visually expressive site to showcase photography work. | [Live](https://photography-portfolio-five-gamma.vercel.app) | [Code](https://github.com/JoeClos/photography-portfolio) |
-| _...and more inside the site!_ |
-
-👉 Full project list coming soon on my redesigned portfolio site!
+| _...and more inside the site!_ | Explore all projects at: [josephine-dev.netlify.app](https://josephine-dev.netlify.app) | — | — |
 
 ---
 
@@ -39,18 +40,12 @@ When I’m not coding, I’m exploring nature, experimenting with new ideas, or 
 
 - **Frontend**: React, TypeScript, Vite, Tailwind CSS
 - **Backend**: Node.js, Express, MongoDB (for full-stack projects)
-- **Styling**: Sass, MUI, Bootstrap, AOS
+- **Styling & Animation**: Sass, MUI, Bootstrap, AOS
 - **Other Tools**: GitHub, Postman, Netlify, Vercel, EmailJS
 
 ---
 
-## 🌐 Live Site
-
-🛠 The redesigned portfolio is coming soon — stay tuned!
-
----
-
-## 📫 Contact
+## 📫 Contact Me
 
 Feel free to reach out or connect on:
 
@@ -59,7 +54,7 @@ Feel free to reach out or connect on:
 
 ---
 
-## 💖 Credits
+## 💖 A Personal Note
 
 Crafted with care, curiosity, and a touch of fuchsia 💜  
 _“Problem solver by nature. Designer by heart.”_
