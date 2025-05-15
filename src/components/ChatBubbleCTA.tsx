@@ -52,12 +52,14 @@ const ChatBubbleCTA = () => {
         </p>
         <div className="flex gap-4 text-sm font-medium">
           <button
+            aria-label="Connect with me"
             className="text-fuchsia-600 hover:underline"
             onClick={handleYesClick}
           >
             Yes!
           </button>
           <button
+            aria-label="Refuse connection"
             className="text-gray-500 hover:underline"
             onClick={() => setVisible(false)}
           >

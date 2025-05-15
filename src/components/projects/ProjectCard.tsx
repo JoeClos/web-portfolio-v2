@@ -56,11 +56,12 @@ const ProjectCard = ({ project, index, isExpanded, toggleExpand }: Props) => {
                     ))}
                 </div>
 
-                {/* Buttons */}
+                {/* External links */}
                 <div className="mt-auto flex gap-3 flex-wrap text-sm">
                     {project.liveLink && (
                         <a
                             href={project.liveLink}
+                            aria-label="Live demo"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full border border-fuchsia-600 text-fuchsia-600 hover:bg-fuchsia-600 hover:text-white transition"
@@ -71,6 +72,7 @@ const ProjectCard = ({ project, index, isExpanded, toggleExpand }: Props) => {
                     {project.codeLink && (
                         <a
                             href={project.codeLink}
+                            aria-label="Source code"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full border border-gray-400 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition"

@@ -89,6 +89,7 @@ const Contact = () => {
             />
 
             <button
+              aria-label="Send message"
               type="submit"
               disabled={loading}
               className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-6 py-3 rounded-md shadow-md transition duration-300"
