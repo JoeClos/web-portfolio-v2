@@ -65,3 +65,7 @@ Feel free to reach out or connect on:
 Crafted with care, curiosity, and a touch of fuchsia 💜  
 _“Problem solver by nature. Designer by heart.”_
 
+<p>
+  <img src="https://komarev.com/ghpvc/?username=JoeClos&label=Visitors&label_color=7B1E7A&color=E586F0&style=flat-square" alt="Visitor counter badge" />
+</p>
+
