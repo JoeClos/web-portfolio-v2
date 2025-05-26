@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { FaFeatherAlt } from "react-icons/fa";
 import profileImg from "../../assets/cover.png";
+import coverWebp from "../../assets/cover.webp";
+import coverAvif from "../../assets/cover.avif";
 
 
 const HeroAboutSection = () => {
@@ -8,12 +10,19 @@ const HeroAboutSection = () => {
     <div className="flex flex-col lg:flex-row items-center md:items-start justify-center gap-10 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Left: Image */}
       <div className="relative z-10 w-[280px] h-[360px] sm:w-[320px] sm:h-[400px] rounded-[2rem] overflow-hidden shadow-lg dark:shadow-[0_0_25px_#d946ef]">
-        <img
-          src={profileImg}
-          alt="Josephine painting style"
-          className="w-full h-full object-cover"
-        />
+        <picture>
+          <source srcSet={coverAvif} type="image/avif" />
+          <source srcSet={coverWebp} type="image/webp" />
+          <img
+            src={profileImg} // fallback
+            alt="Josephine painting style"
+            width={320}
+            height={400}
+            className="w-full h-full object-cover"
+          />
+        </picture>
       </div>
+
 
       {/* Right: Text Content */}
       <motion.div
