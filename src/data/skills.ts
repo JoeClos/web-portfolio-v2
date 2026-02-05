@@ -16,7 +16,9 @@ import {
   SiMysql,
   SiSalesforce,
   SiDocker,
-  SiPostman 
+  SiPostman, 
+  SiJira,
+  SiCanva
 } from "react-icons/si";
 import { BiLogoVisualStudio, BiLogoSpringBoot  } from "react-icons/bi";
 import { FaJava } from "react-icons/fa";
@@ -48,5 +50,7 @@ export const skills = {
     { name: "Salesforce", icon: SiSalesforce, color: "#00a1e0" },
     { name: "Docker", icon: SiDocker, color: "#2496ed" },
     { name: "Postman", icon: SiPostman, color: "#ff6c37" },
+    { name: "Jira", icon: SiJira, color: "#0052cc" },
+    { name: "Canva", icon: SiCanva, color: "#00c4cc" },
   ],
 };
