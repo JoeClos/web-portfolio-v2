@@ -43,7 +43,7 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16">
         {/* Contact Form Section */}
         <div className="w-full lg:w-1/2">
-          <h1 className="text-3xl sm:text-4xl font-extrabold leading-snug text-center lg:text-left text-gray-900 dark:text-white mb-4">
+          <h1 className="text-4xl sm:text-5xl font-extrabold leading-snug text-center lg:text-left text-gray-900 dark:text-white mb-4">
             Get in Touch
           </h1>
           <p className="text-lg text-center lg:text-left text-gray-700 dark:text-gray-300 font-['DM_Sans'] mb-12">

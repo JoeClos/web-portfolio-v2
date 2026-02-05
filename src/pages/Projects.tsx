@@ -27,9 +27,8 @@ const Projects = () => {
   return (
     <div className="pt-24 sm:pt-28 px-4 sm:px-6 lg:px-12 xl:px-20">
       <div className="text-center max-w-4xl mx-auto mb-12" data-aos="fade-up">
-        <h1 className="text-3xl sm:text-4xl font-extrabold leading-snug mb-4">
-          Problem solver by nature. <span className="text-fuchsia-600">Designer by heart.</span>
-        </h1>
+        <h1 className="text-4xl sm:text-5xl font-extrabold leading-snug mb-4">
+          <span className="bg-gradient-to-r from-purple-600 to-fuchsia-600 dark:from-purple-400 dark:to-fuchsia-400 bg-clip-text text-transparent">Problem solver</span> by nature. <span className="bg-gradient-to-r from-fuchsia-600 to-pink-600 dark:from-fuchsia-400 dark:to-pink-400 bg-clip-text text-transparent">Designer </span> by heart.</h1>
         <p className="text-lg text-gray-700 dark:text-gray-300 font-['DM_Sans']">
           Dive into my work and see what I've been up to!
         </p>

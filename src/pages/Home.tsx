@@ -12,16 +12,14 @@ const Home = () => {
         <div className="flex flex-col-reverse md:flex-row items-center gap-12 px-6 max-w-7xl w-full ">
           {/* Text Content */}
           <div className="flex-1 text-center md:text-left" data-aos="fade-right">
-            <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 tracking-tight leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-5xl font-extrabold mb-6 tracking-tight leading-tight">
               Hi, I'm <span className="text-fuchsia-600">{name}</span>
-              <br />A developer who blends art, empathy & innovation.
+              <br />A developer who blends empathy & innovation.
             </h1>
 
             <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-xl mb-8 leading-relaxed font-medium font-['DM_Sans']">
 
-              I'm here to build web experiences that feel human, intuitive,
-              accessible, and crafted with care — each line of code is a little
-              piece of my story.
+              I'm here to build intuitive, accessible, and thoughtfully crafted web experiences.
             </p>
             <div className="flex gap-4 justify-center md:justify-start">
               <Link
