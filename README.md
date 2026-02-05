@@ -13,7 +13,7 @@
 
 <p align="center">
   <a href="https://josephine-dev.netlify.app" target="_blank">
-    <img src="https://josephine-dev.netlify.app/assets/portfolio-preview.jpg" alt="Portfolio Preview" width="100%" />
+    <img src="https://josephine-dev.netlify.app/assets/portfolio preview.jpg" alt="Portfolio Preview" width="100%" />
   </a>
 </p>
 
