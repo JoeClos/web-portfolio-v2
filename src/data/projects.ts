@@ -76,7 +76,7 @@ export const projects: Project[] = [
       "A movie lover's weekend project — I used the TMDB API to fetch and display films currently playing in theatres.  Work in progress with new features planned.",
     imageUrl: "/assets/projects-img/movie_db.png",
     techStack: ["React", "Node.js", "Express", "Bootstrap"],
-    liveLink: "https://mdb-q81s.onrender.com/",
+    liveLink: "https://tmdb-movies-pnbv.onrender.com/",
     codeLink: "https://github.com/JoeClos/TMDB-movies",
   },
   {
