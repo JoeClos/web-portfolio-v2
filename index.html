@@ -14,7 +14,7 @@
     />
     <meta name="author" content="Josephine Closan" />
 
-    <link rel="icon" type="image/png" href="/logo.png" sizes="48x48"/>
+    <link rel="icon" type="image/png" href="/logo.png" sizes="48x48" />
 
     <!-- Open Graph Tags -->
     <meta
@@ -40,23 +40,36 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Josephine Closan",
-        "url": "https://josephine-dev.netlify.app/",
-        "logo": "https://josephine-dev.netlify.app/logo.png",
-        "jobTitle": "Frontend Developer",
-        "sameAs": [
-          "https://www.linkedin.com/in/josephine-closan/",
-          "https://github.com/JoeClos"
-        ],
-        "knowsAbout": [
-          "React",
-          "TypeScript",
-          "Tailwind CSS",
-          "UI Design",
-          "Web Development"
-        ],
-        "description": "Josephine is a frontend developer passionate about building responsive, accessible, and user-friendly web experiences using modern technologies."
+        "@graph": [
+          {
+            "@type": "Person",
+            "name": "Josephine Closan",
+            "url": "https://josephine-dev.netlify.app/",
+            "image": "https://josephine-dev.netlify.app/logo.png",
+            "jobTitle": "Frontend Developer",
+            "sameAs": [
+              "https://www.linkedin.com/in/josephine-closan/",
+              "https://github.com/JoeClos"
+            ],
+            "knowsAbout": [
+              "React",
+              "TypeScript",
+              "Tailwind CSS",
+              "UI Design",
+              "Web Development"
+            ],
+            "description": "Josephine Closan is a frontend developer passionate about building responsive, accessible, and user-friendly web experiences using modern technologies."
+          },
+          {
+            "@type": "WebSite",
+            "name": "Josephine Closan Portfolio",
+            "url": "https://josephine-dev.netlify.app/",
+            "author": {
+              "@type": "Person",
+              "name": "Josephine Closan"
+            }
+          }
+        ]
       }
     </script>
   </head>
